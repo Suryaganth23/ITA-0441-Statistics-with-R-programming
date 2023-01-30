@@ -1,0 +1,6 @@
+print("First 10 characters from letters")
+head(letters, 10)
+print("Last 10 characters from letters")
+tail(LETTERS, 10)
+print("Letters between 22nd to 24th letters in upper case:")
+tail(LETTERS[22:24])

@@ -1,0 +1,23 @@
+#1a
+name=c("Anastasia","Dima","Katherine","james","Emily","Michael",
+       "Matthew","Laura","Kevin","Jonas")
+score=c(12.5,9,16.5,12,9,20,14.5,13.5,8,19)
+attempt=c(1,3,2,3,2,3,1,1,2,1)
+qualify=c("yes","no","yes","no","no","yes","yes","no","no","yes")
+df=data.frame(name,score,attempt,qualify)
+print(df)
+#b
+print(df[c(1,2),])
+#c
+print(df[c(3,5),c(1,3)])
+#d
+su=12.5+9+16.5+12+9+20+14.5+13.5+8+19
+print(su/10)
+#e
+mat=matrix(c(1,2,3),nrow=3)
+vec=c(4,5,6)
+lis=list(c(7,8,9),"Saran")
+listd=list("Matrix"=mat,"Vector"=vec,"List"=lis)
+listd
+print(listd[1])
+print(listd[2])

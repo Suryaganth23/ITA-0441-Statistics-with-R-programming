@@ -1,0 +1,20 @@
+#2
+d=ChickWeight
+#i)
+str(d)
+summary(d)
+
+#ii)
+tail(d,6)
+#iii)
+library(dplyr)
+d%>%
+  group_by(Diet)%>%
+  arrange(weight)
+#iv)
+library(reshape)
+md=melt(d,id=c("Time","Chick","Diet"))
+print(head(md))
+#v)
+cas=cast(md,Diet~.,mean)
+print(cas)
